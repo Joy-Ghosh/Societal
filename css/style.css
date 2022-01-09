@@ -103,6 +103,10 @@ nav .container {
   align-items: center;
   justify-content: space-between;
 }
+nav .logo h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
 
 nav .searchbox {
   background-color: var(--color-light);
@@ -350,4 +354,59 @@ main .container .left .profile .profile-picture img {
   color: var(--color-dark);
   margin-right: 1rem;
   background: transparent;
+}
+
+
+/* -----------------------FEED------------------ */
+.feeds{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.feed{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: space-between;
+    gap: 1rem;
+    background: white;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+.feed .head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+.feed .head .profile-picture img{
+    width: 3rem;
+}
+.feed .feed-photo img{
+    border-radius: .5rem;
+}
+
+.feed .action-area i{
+    font-size: 1.4rem;
+}
+.feed .action-area{
+    position: relative;
+}
+.feed .action-area i:last-child{
+    position: absolute;
+    right: 0;
+}
+
+.feed .liked-by .names{
+    font-size: .8rem;
+}
+
+.feed .liked-by .names span{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.feed .caption span{
+    font-size: 1.1rem;
+    font-weight: 500;
 }
