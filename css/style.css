@@ -103,9 +103,9 @@ nav .container {
   align-items: center;
   justify-content: space-between;
 }
-nav .logo h2{
-    font-size: 2rem;
-    font-weight: 600;
+nav .logo h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 nav .searchbox {
@@ -271,6 +271,8 @@ main .container .left .profile .profile-picture img {
 }
 
 /* -------------MIDLE------------------- */
+
+/* ------------STORIES---------- */
 .middle .stories {
   display: flex;
   justify-content: space-between;
@@ -289,6 +291,7 @@ main .container .left .profile .profile-picture img {
   width: 100%;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .middle .stories .story p {
   z-index: var(--z-10);
@@ -330,7 +333,7 @@ main .container .left .profile .profile-picture img {
   background: url("../images/s3.jpg") no-repeat center center/cover;
 }
 
-/* ---------Creat-post */
+/* ---------Creat-post -------*/
 
 .middle .create-post {
   margin-top: 1rem;
@@ -356,57 +359,228 @@ main .container .left .profile .profile-picture img {
   background: transparent;
 }
 
-
 /* -----------------------FEED------------------ */
-.feeds{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+.feeds {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.feed{
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    justify-content: space-between;
-    gap: 1rem;
-    background: white;
-    padding: var(--card-padding);
-    border-radius: var(--card-border-radius);
+.feed {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  justify-content: space-between;
+  gap: 1rem;
+  background: white;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
 }
-.feed .head{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 1rem;
+.feed .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.feed .head .profile-picture img{
-    width: 3rem;
+.feed i {
+  cursor: pointer;
+  color: var(--color-dark);
 }
-.feed .feed-photo img{
-    border-radius: .5rem;
-}
-
-.feed .action-area i{
-    font-size: 1.4rem;
-}
-.feed .action-area{
-    position: relative;
-}
-.feed .action-area i:last-child{
-    position: absolute;
-    right: 0;
+.profile-handle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
-.feed .liked-by .names{
-    font-size: .8rem;
+.feed .head .profile-picture img {
+  width: 3rem;
+}
+.feed .feed-photo img {
+  border-radius: 0.5rem;
 }
 
-.feed .liked-by .names span{
-    font-size: 1.1rem;
-    font-weight: 500;
+.feed .action-area i {
+  font-size: 1.4rem;
 }
-.feed .caption span{
-    font-size: 1.1rem;
-    font-weight: 500;
+.feed .action-area {
+  position: relative;
+}
+.feed .action-area i:last-child {
+  position: absolute;
+  right: 0;
+}
+.feed .liked-by {
+  margin: 0.6rem;
+  display: flex;
+}
+.feed .liked-by span {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin-left: -0.6rem;
+  border: 2px solid white;
+}
+.feed .liked-by p {
+  margin-left: 0.6rem;
+}
+
+/* -------------RIGHT------------ */
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+/* -------MESSAGE-BOX----------- */
+.message-box {
+  background: white;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+.message-box .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message-box .head i {
+  font-size: 1.4rem;
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
+.message-box .search-form {
+  margin: 1rem 0rem;
+  display: flex;
+  background: var(--color-light);
+  border-radius: var(--card-border-radius);
+  padding: 0.4rem;
+}
+
+.message-box .search-form input[type="search"] {
+  padding: 0.3rem;
+  background: transparent;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+.message-box .search-form input[type="search"]::placeholder {
+  color: var(--color-light-gray);
+}
+
+.message-box .messages-section .categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.message-box .messages-section .categories a {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-bottom: 4px solid rgb(199, 199, 199);
+  padding: 0.4rem 0.2rem;
+}
+.message-box .messages-section .categories a:hover {
+  border-bottom: 4px solid var(--color-primary);
+}
+.message-box .messages-section .categories .active {
+  border-bottom: 4px solid var(--color-primary);
+}
+.message-box .messages-section .categories .unseen {
+  color: var(--color-primary);
+}
+
+.messages {
+  margin-top: 1rem;
+}
+.message {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.message .profile-picture {
+  position: relative;
+  overflow: visible;
+}
+
+.message .profile-picture .active {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: 0.5px solid white;
+  background: rgb(54, 207, 62);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.message .profile-picture img {
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+/* .name-message{
+  display: flex;
+  flex-direction: column;
+  
+} */
+
+.name-message .name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.name-message .message-details {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.name-message .seen-message {
+  color: var(--color-light-gray);
+}
+
+/* Requests */
+
+.request-box {
+  margin-top: 1rem;
+  
+}
+.request-box .title{
+  color: var(--color-light-gray);
+} 
+
+.request-box .all-requests {
+  margin-top: 1rem;
+}
+.request-box .all-requests .requests {
+  background: white;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.request-box .all-requests .requests .top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.request-box .all-requests .requests .profile-picture img {
+  width: 3rem;
+}
+.request-box .all-requests .requests .top .name-mutual .mutual {
+  font-size: 1.2rem;
+}
+.request-box .all-requests .requests .top .name-mutual .name {
+  font-size: 1rem;
+}
+.request-box .all-requests .requests .buttons {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end;  */
+  gap: 1rem;
 }
