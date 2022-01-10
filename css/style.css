@@ -5,6 +5,31 @@
 #4fbdba
 #aefeff */
 
+
+
+
+
+/* -------------  Sky Color #0099ff   - ---------------- */
+/* :root {
+  --color-dark: #071016;
+  --color-light: #dbf1ff;
+  --color-primary: #0099ff;
+  --color-secondary: #5dbeff;
+  --color-light-gray: #696969;
+  --color-dark-gray: #3a3a3a;
+
+  --border-radius: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 1rem;
+
+  --z-10: 10;
+  --z-100: 100;
+  --z-1000: 1000;
+} */
+
+
+
+/* ----------   Tint Color #35858b  -------------- */
 :root {
   --color-dark: #072227;
   --color-light: #e0eaeb;
@@ -21,6 +46,85 @@
   --z-100: 100;
   --z-1000: 1000;
 }
+
+
+/* -------------  Green Color #1fb627   - ---------------- */
+/* :root {
+  --color-dark: #091b0a;
+  --color-light: #e6ffe7;
+  --color-primary: #1fb627;
+  --color-secondary: #4fc555;
+  --color-light-gray: #696969;
+  --color-dark-gray: #3a3a3a;
+
+  --border-radius: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 1rem;
+
+  --z-10: 10;
+  --z-100: 100;
+  --z-1000: 1000;
+} */
+
+
+/* ------------------------   Yellow Orange #ff8724     ------------------------------ */
+/* :root {
+  --color-dark: #20110a;
+  --color-light: #fdf0e5;
+  --color-primary: #ff8724;
+  --color-secondary: #ff9e4f;
+  --color-light-gray: #696969;
+  --color-dark-gray: #3a3a3a;
+
+  --border-radius: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 1rem;
+
+  --z-10: 10;
+  --z-100: 100;
+  --z-1000: 1000;
+} */
+
+/* -------------------   Orange Color #ff5724      ------------------ */
+/* :root {
+  --color-dark: #1d0d08;
+  --color-light: #ffece7;
+  --color-primary: #ff5724;
+  --color-secondary: #ff835d;
+  --color-light-gray: #696969;
+  --color-dark-gray: #3a3a3a;
+
+  --border-radius: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 1rem;
+
+  --z-10: 10;
+  --z-100: 100;
+  --z-1000: 1000;
+} */
+
+
+
+/* -------------------   Red Color #ff2424      ------------------ */
+/* :root {
+  --color-dark: #160505;
+  --color-light: #ffe1e1;
+  --color-primary: #ff2424;
+  --color-secondary: #e64a4a;
+  --color-light-gray: #696969;
+  --color-dark-gray: #3a3a3a;
+
+  --border-radius: 2rem;
+  --card-padding: 1rem;
+  --card-border-radius: 1rem;
+
+  --z-10: 10;
+  --z-100: 100;
+  --z-1000: 1000;
+} */
+
+
+
 
 *,
 *::after,
@@ -500,6 +604,7 @@ main .container .left .profile .profile-picture img {
   margin-top: 1rem;
 }
 .message {
+  cursor: pointer;
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -576,12 +681,14 @@ main .container .left .profile .profile-picture img {
 
 .request-box .all-requests .requests .profile-picture img {
   width: 3rem;
+  cursor: pointer;
 }
 .request-box .all-requests .requests .top .name-mutual .mutual {
   font-size: 1.2rem;
 }
 .request-box .all-requests .requests .top .name-mutual .name {
   font-size: 1rem;
+  cursor: pointer;
 }
 .request-box .all-requests .requests .buttons {
   display: flex;
