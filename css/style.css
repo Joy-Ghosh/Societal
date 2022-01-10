@@ -426,6 +426,10 @@ main .container .left .profile .profile-picture img {
   margin-left: 0.6rem;
 }
 
+.feed .comments{
+  cursor: pointer;
+}
+
 /* -------------RIGHT------------ */
 
 .title {
