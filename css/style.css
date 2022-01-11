@@ -24,7 +24,7 @@
 } */
 
 /* ----------   Tint Color #35858b  -------------- */
-/* :root {
+:root {
   --color-dark: #072227;
   --color-light: #e0eaeb;
   --color-primary: #35858b;
@@ -39,10 +39,10 @@
   --z-10: 10;
   --z-100: 100;
   --z-1000: 1000;
-} */
+}
 
 /* -------------  Green Color #1fb627   - ---------------- */
-:root {
+/* :root {
   --color-dark: #091b0a;
   --color-light: #e6ffe7;
   --color-primary: #1fb627;
@@ -57,7 +57,7 @@
   --z-10: 10;
   --z-100: 100;
   --z-1000: 1000;
-}
+} */
 
 /* ------------------------   Yellow Orange #ff8724     ------------------------------ */
 /* :root {
@@ -742,6 +742,6 @@ main .container .left .profile .profile-picture img {
     font-size: 1rem;
   }
   main .container .middle {
-    width: 90vw;
+    width: 92vw;
   }
 }
