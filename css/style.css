@@ -738,10 +738,13 @@ main .container .left .profile .profile-picture img {
 /* small mobile */
 
 @media screen and (max-width: 500px){
+  main .left .sidebar{
+    display: none;
+  }
   main .left .sidebar i{
     font-size: 1rem;
   }
   main .container .middle {
-    width: 100vw;
+    width: 95vw;
   }
 }
