@@ -5,12 +5,8 @@
 #4fbdba
 #aefeff */
 
-
-
-
-
 /* -------------  Sky Color #0099ff   - ---------------- */
-/* :root {
+:root {
   --color-dark: #071016;
   --color-light: #dbf1ff;
   --color-primary: #0099ff;
@@ -25,12 +21,10 @@
   --z-10: 10;
   --z-100: 100;
   --z-1000: 1000;
-} */
-
-
+}
 
 /* ----------   Tint Color #35858b  -------------- */
-:root {
+/* :root {
   --color-dark: #072227;
   --color-light: #e0eaeb;
   --color-primary: #35858b;
@@ -45,8 +39,7 @@
   --z-10: 10;
   --z-100: 100;
   --z-1000: 1000;
-}
-
+} */
 
 /* -------------  Green Color #1fb627   - ---------------- */
 /* :root {
@@ -65,7 +58,6 @@
   --z-100: 100;
   --z-1000: 1000;
 } */
-
 
 /* ------------------------   Yellow Orange #ff8724     ------------------------------ */
 /* :root {
@@ -103,8 +95,6 @@
   --z-1000: 1000;
 } */
 
-
-
 /* -------------------   Red Color #ff2424      ------------------ */
 /* :root {
   --color-dark: #160505;
@@ -122,9 +112,6 @@
   --z-100: 100;
   --z-1000: 1000;
 } */
-
-
-
 
 *,
 *::after,
@@ -283,7 +270,7 @@ main .container .left .profile .profile-picture img {
 .left .sidebar .menu-items {
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 3.6rem;
   position: relative;
   cursor: pointer;
   transition: all 300ms ease;
@@ -311,7 +298,7 @@ main .container .left .profile .profile-picture img {
 }
 .left .sidebar .menu-items h3 {
   margin-left: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .left .sidebar .active {
   background: var(--color-light);
@@ -419,23 +406,25 @@ main .container .left .profile .profile-picture img {
   bottom: 0;
 }
 
+/* -----------------STORIES BACKGROUND------------- */
+
 .middle .stories .story:nth-child(1) {
-  background: url("../images/s4.jpg") no-repeat center center/cover;
+  background: url("../images/status/s1.jpeg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2) {
-  background: url("../images/s3.jpg") no-repeat center center/cover;
+  background: url("../images/status/s2.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3) {
-  background: url("../images/s2.jpg") no-repeat center center/cover;
+  background: url("../images/status/s3.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4) {
-  background: url("../images/s1.jpg") no-repeat center center/cover;
+  background: url("../images/status/s4.jpeg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(5) {
-  background: url("../images/s5.jpg") no-repeat center center/cover;
+  background: url("../images/status/s5.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(6) {
-  background: url("../images/s3.jpg") no-repeat center center/cover;
+  background: url("../images/status/s6.jpg") no-repeat center center/cover;
 }
 
 /* ---------Creat-post -------*/
@@ -502,6 +491,7 @@ main .container .left .profile .profile-picture img {
 }
 .feed .feed-photo img {
   border-radius: 0.5rem;
+  /* width: auto; */
 }
 
 .feed .action-area i {
@@ -531,7 +521,7 @@ main .container .left .profile .profile-picture img {
   margin-left: 0.6rem;
 }
 
-.feed .comments{
+.feed .comments {
   cursor: pointer;
 }
 
@@ -654,11 +644,10 @@ main .container .left .profile .profile-picture img {
 
 .request-box {
   margin-top: 1rem;
-  
 }
-.request-box .title{
+.request-box .title {
   color: var(--color-light-gray);
-} 
+}
 
 .request-box .all-requests {
   margin-top: 1rem;
