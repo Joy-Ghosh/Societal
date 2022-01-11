@@ -742,6 +742,6 @@ main .container .left .profile .profile-picture img {
     font-size: 1rem;
   }
   main .container .middle {
-    width: 92vw;
+    width: 100vw;
   }
 }
