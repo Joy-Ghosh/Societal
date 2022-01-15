@@ -513,12 +513,16 @@ main .container .left .profile .profile-picture img {
   font-size: 1.4rem;
 }
 .feed .action-area {
+  display: flex;
+  justify-content: space-between;
+}
+/* .feed .action-area {
   position: relative;
 }
 .feed .action-area i:last-child {
   position: absolute;
   right: 0;
-}
+} */
 .feed .liked-by {
   margin: 0.6rem;
   display: flex;
